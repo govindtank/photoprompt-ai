@@ -1,5 +1,5 @@
 name: photoprompt
-description: "PhotoPrompt AI - AI Image Generator with Nano Banana/Free Model Integration"
+description: "PhotoPrompt AI - Create stunning images with AI using FLUX.1 Schnell"
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -10,38 +10,13 @@ dependencies:
   flutter:
     sdk: flutter
   
-  # Core functionality
   cupertino_icons: ^1.0.8
-  
-  # State management
-  provider: ^6.1.2
-  
-  # Local database for caching images
-  hive: ^2.2.3
-  hive_flutter: ^1.1.0
-  
-  # HTTP client for API calls
-  http: ^1.2.2
-  
-  # Image handling
-  image_picker: ^1.1.0
-  
-  # UI enhancements
-  flutter_animate: ^4.5.2
-  cached_network_image: ^3.3.1
-  
-  # Secure storage for API tokens (optional)
-  flutter_secure_storage: ^9.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   
-  # Lints
   flutter_lints: ^4.0.0
 
 flutter:
   uses-material-design: true
-  
-  assets:
-    - assets/prompts/

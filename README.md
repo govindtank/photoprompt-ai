@@ -1,234 +1,87 @@
-# 📸 PhotoPrompt AI - Complete Project Documentation
+# PhotoPrompt AI
 
-**Developer**: Govind Tank  
-**Company**: DroidTank  
-**Version**: 1.0.0+1  
-**Platform**: Flutter (iOS & Android)  
+![Flutter](https://img.shields.io/badge/Flutter-3.24.0-02569B?style=for-the-badge&logo=flutter)
+![Dart](https://img.shields.io/badge/Dart-3.5.0-0175C2?style=for-the-badge&logo=dart)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
----
+> Create stunning AI-generated images with text prompts using FLUX.1 Schnell
 
-## ✅ **PROJECT STATUS: READY TO BUILD!**
+## ✨ Features
 
-All infrastructure is in place and ready for development.
+- **AI Image Generation** - Generate beautiful images from text descriptions
+- **FLUX.1 Schnell Integration** - Free tier powered by Replicate API
+- **Modern Dark UI** - Premium creative tool aesthetic with smooth animations
+- **Responsive Design** - Works beautifully on desktop and mobile
+- **Quick Prompts** - Pre-built creative prompts for inspiration
+- **Download & Share** - Save your creations easily
 
----
+## 🚀 Tech Stack
 
-## 🎯 **Project Concept**
+- **Flutter 3.24.0** - Cross-platform UI framework
+- **Dart 3.5** - Modern programming language
+- **Replicate API** - AI model hosting (FLUX.1 Schnell)
+- **GitHub Actions** - CI/CD for automated deployments
+- **GitHub Pages** - Free hosting
 
-PhotoPrompt AI is a mobile application that allows users to generate stunning AI images using free model tiers (Nano Banana/FLUX.1 Schnell via Replicate API). The app features:
+## 📁 Project Structure
 
-- **🌟 Prompt Gallery**: 50+ pre-loaded prompts across categories
-- **🖼️ Image Generation**: Integration with Replicate API for image generation
-- **💾 Local Caching**: Offline access to generated images
-- **📤 Image Upload**: Reference images for inpainting/upscaling
-- **🎨 Dark Theme**: Professional UI optimized for image viewing
+```
+lib/
+├── main.dart                    # App entry point
+├── app.dart                     # Root widget configuration
+└── core/
+    └── config/
+        ├── constants.dart       # Colors, spacing, theme constants
+        └── themes.dart          # Dark theme configuration
+└── features/
+    └── home/
+        └── screens/
+            └── generation_screen.dart  # Main generation UI
+```
 
----
+## 🎨 UI Preview
 
-## 📁 **Project Location**
+The app features a premium dark theme with:
+- Vibrant purple/pink gradient accents
+- Animated loading states
+- Glass-morphism effect cards
+- Responsive two-column layout on desktop
+- Smooth transitions and micro-interactions
+
+## 🛠️ Local Development
 
 ```bash
-~/photoprompt_ai/
-```
-
-**Access it:**
-```bash
-cd ~/photoprompt_ai
-ls -la
-```
-
----
-
-## 📦 **What's Already Created:**
-
-### ✅ **Project Structure (Complete):**
-```
-photoprompt_ai/
-├── lib/
-│   └── main.dart              # Entry point (needs implementation)
-├── assets/prompts/            # ✅ 5 prompt files created
-│   ├── portraits_01.json
-│   ├── landscapes_01.json
-│   ├── abstract_01.json
-│   ├── characters_01.json
-│   └── surreal_01.json
-├── test/
-│   └── widget_test.dart
-├── pubspec.yaml               # ✅ Dependencies configured
-├── analysis_options.yaml
-├── README.md                  # This file (being updated)
-├── android/                   # ✅ Android platform
-├── ios/                       # ✅ iOS platform
-├── web/                       # ✅ Web platform
-└── macos/                    # ✅ macOS platform
-```
-
-### ✅ **Dependencies Installed:**
-- `hive` - Local database for image caching
-- `hive_flutter` - Flutter Hive integration
-- `http` - API calls to Replicate
-- `image_picker` - Camera/gallery access
-- `flutter_secure_storage` - Secure API token storage
-- `cached_network_image` - Image caching
-
----
-
-## 🚀 **NEXT STEPS - Build the App:**
-
-### **Step 1: Create Core Files**
-
-The following files need to be created. Run these commands or I can generate them:
-
-```bash
-cd ~/photoprompt_ai/lib/core/config
-touch constants.dart themes.dart api_config.dart
-
-cd lib/data/models
-touch generated_image_model.dart
-
-cd lib/data/services
-touch replicate_service.dart cache_service.dart
-
-cd lib/data/repositories
-touch image_generation_repo.dart
-
-cd lib/features/splash/screens
-touch splash_screen.dart
-
-cd lib/features/home/screens
-touch generation_screen.dart
-
-cd lib/features/gallery/screens
-touch gallery_screen.dart
-
-cd lib/features/prompts/screens
-touch prompts_list_screen.dart
-touch prompts_gallery_screen.dart
-```
-
-### **Step 2: Generate All Source Files**
-
-Would you like me to create all the Dart source files now? The complete app will have:
-
-- **14 Dart files** for screens, models, and services
-- **5 prompt JSON files** in assets/prompts/
-- **Complete dark theme** with animations
-- **Hive database schema** for offline access
-
----
-
-## 💰 **FREE MODEL USAGE:**
-
-### **Replicate FLUX.1 Schnell:**
-- ✅ **50 credits/month FREE** (no credit card required)
-- ✅ ~1,900 free images per month at $0.026/gen
-- ✅ Resolution: Up to 1024x1024
-- ✅ Generation time: ~30 seconds
-
-### **Nano Banana Alternative:**
-- ✅ Also available on Replicate with similar pricing
-- ✅ Free tier typically includes ~50 credits/month
-- ✅ Optimized for quick generations
-
----
-
-## 🎨 **Key Features:**
-
-| Feature | Status | Description |
-|---------|--------|-------------|
-| ✨ **Prompt Gallery** | Ready to Build | 20+ pre-loaded prompts across 5 categories |
-| 🖼️ **AI Image Generation** | Ready to Build | Replicate API integration (FREE TIERS!) |
-| 📤 **Image Upload** | Ready to Build | Camera/gallery upload for reference |
-| 💾 **Offline Caching** | Ready to Build | Hive database stores all images locally |
-| 🌙 **Dark Theme UI** | Ready to Build | Professional dark theme optimized for images |
-| 👆 **Touch Optimized** | Ready to Build | Swipe gestures, large touch targets |
-| 📂 **Share/Download** | Ready to Build | Built-in share and download functionality |
-
----
-
-## 🔧 **API Setup (Optional but Recommended):**
-
-1. **Sign up**: https://replicate.com
-2. **Get API Token**: From dashboard → Settings → API Tokens
-3. **Store Securely**: Use `flutter_secure_storage` to save token
-4. **Free Tier**: 50 credits/month automatically activated
-
----
-
-## 🏃 **Quick Start:**
-
-### **After files are created:**
-```bash
-cd ~/photoprompt_ai
+# Install dependencies
 flutter pub get
-flutter run
+
+# Run locally
+flutter run -d chrome
+
+# Build for web
+flutter build web --release --base-href /photoprompt-ai/
 ```
 
-### **On Simulator/Device:**
-```bash
-flutter run -d <device-id>
-```
+## 🔌 API Integration
+
+The app uses the [Replicate API](https://replicate.com/) with the free **FLUX.1 Schnell** model:
+- 50 free credits per month
+- ~1923 free generations
+- Max resolution: 1024x1024
+
+To enable full image generation:
+1. Get your API token from [Replicate](https://replicate.com/account/api-tokens)
+2. Add your token to the API configuration
+
+## 🚢 Deployment
+
+The app is automatically deployed to GitHub Pages via GitHub Actions on every push to `main`.
+
+**Live URL**: https://govindtank.github.io/photoprompt-ai/
+
+## 📄 License
+
+MIT License - feel free to use this project for learning and development.
 
 ---
 
-## 📝 **Development Workflow:**
-
-### **1. Create All Source Files**
-Generate the 14 Dart files for:
-- Screens (5)
-- Models (1)
-- Services (2)
-- Repositories (1)
-- Config (3)
-- Entry points (2)
-
-### **2. Run & Test**
-```bash
-flutter run
-```
-
-### **3. Generate Images**
-- Browse prompt gallery
-- Select a prompt or enter custom text
-- Upload reference image (optional)
-- Generate AI image
-
-### **4. View Gallery**
-- All generated images cached locally
-- Swipe to browse
-- Share or download images
-
----
-
-## 🎯 **Project Highlights:**
-
-✅ **FREE MODEL INTEGRATION**: Uses Replicate's free tier  
-✅ **PROMPT GALLERY**: 50+ pre-loaded prompts  
-✅ **INSTANT GENERATIONS**: ~30 seconds per image  
-✅ **OFFLINE ACCESS**: Hive caching for all images  
-✅ **DARK THEME**: Professional UI/UX  
-✅ **MOBILE OPTIMIZED**: Touch gestures, responsive layout  
-
----
-
-## 📊 **Current Status:**
-
-- ✅ **Project folder**: Created at `~/photoprompt_ai/`
-- ✅ **Dependencies**: Installed and configured
-- ✅ **Prompt assets**: 5 files created
-- ✅ **Directory structure**: Complete
-- ⏳ **Source code**: Ready to generate
-
----
-
-**Next Action**: Would you like me to generate all the Dart source files now?
-
-This will create:
-1. All screen widgets (splash, gallery, generation, prompts)
-2. Data models for Hive caching
-3. API services for Replicate integration
-4. Repository pattern orchestration
-5. Configuration files
-6. Main entry points with theming
-
-All with proper documentation and error handling! 🚀
+Made with ❤️ using Flutter
